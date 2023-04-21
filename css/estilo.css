@@ -111,6 +111,6 @@ h2{
     .inicio a:hover{
         color: blueviolet;
     }
-    .input-contenedor:hover{
+    .input-contenedor{
         transition: all ease-in-out .5s;
     }
