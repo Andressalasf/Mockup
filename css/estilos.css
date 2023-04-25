@@ -10,7 +10,12 @@ body{
 
 header{
     width: 100%;
-    background-color: #349c74;
+    background-color: #CADE01;
+}
+.titulo{
+    color:  #120727;
+    font-size: 20px;
+
 }
 
 .part-header{
@@ -26,6 +31,7 @@ header{
 .icon img{
     width: 100px;
     margin-left: 20px;
+    color: #FFFFFF;
 }
 
 nav{
@@ -33,7 +39,7 @@ nav{
     align-items: center;
     width: 100%;
     height: 40px;
-    background-color: #245a5a;
+    background-color: #120727;
     
 }
 
@@ -41,6 +47,15 @@ nav{
 .portada img{
     width: 80px;
 }
+
+
+/* ################## COLORES ####################### 
+
+#120727
+#6924A5
+#ffffff
+#CADE01 
+*/
 
 /* ############NAVEGADOR ESTILOS ###################333 */
 
@@ -56,8 +71,8 @@ ul, ol{
 }
 
 .nav li a{
-    background-color: #245a5a;
-    color: black;
+    background-color: #120727;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
@@ -82,76 +97,106 @@ ul, ol{
 
 /* ############ SECTION ################# */
 
-#section{
-    background: rgb(230,147,188);
-background: linear-gradient(90deg, rgba(230,147,188,1) 53%, rgba(52,156,116,1) 97%);
-}
-
-.contenedor{
+.contenido{
+    background-color: #FFFFFF;
+    max-width: 1100px;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    
+    margin: 40px auto;
+    display: flex ;
 }
 
-.ropa-contenedor{
+.mostrador{
+    width: 100%;
+    height: 400px;
+    transition: .5s ease;
+    overflow: hidden;
     border-radius: 10px;
-    width: 400px;
-    color:black;
-    background-color: #d5bebe;
-    padding-bottom: 15px;
-    margin: 30px 30px;
-   
-
-
-}
-.ropa-contenedor:hover{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
-.ropa-contenedor a:hover{
-    background-color: #434343;
-}
-
-.ropa-contenedor img{
-    width: 100%;
-    height: 250px;
-    border-radius: 10px 10px 0 0;
-
-
-}
-.info{
-    padding: 15px 30px;
-    line-height: 2;
-}
-.info a{
-    width: 100%;
+.mostrador .ropa{
     display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: black; 
-    background-color: #245a5a;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.contenedor-foto{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contenedor-foto:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+.contenedor-foto img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px  10px 0 0;
 }
 
-.info h3{
-text-align: center;
-padding: 10px;
+
+.contenedor-foto p{
+    margin: 5px;
 }
+
+.mostrador .ropa .item{
+    width: 200px;
+    padding: 10px;
+    height: 300px;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.mostrador .ropa .item img{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0 0;
+}
+.mostrador .ropa .item .descripcion{
+    color: #120727;
+    font-weight: 10px;
+}
+
+.mostrador .ropa .item .precio{
+    color: #CADE01;
+    font-weight: 8px;
+    font-size: 15px;
+}
+
+.contenedor-foto a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px;
+    background-color: black;
+}
+
+.contenedor-foto a:hover{
+    background-color: #CADE01;
+}
+
+
+
+
 
 /* ################# PIE DE PAGINA ############## */
 
 footer{
     list-style: none;
-  
 }
 
 .container{
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 .footer{
-    background-color: #245a5a;
-    padding: 80px 0;
+    background-color: #120727;
+    padding: 50px 0;
 
 }
 .footer-row{
@@ -164,10 +209,10 @@ footer{
 }
 .footer-links h4{
     font-size: 20px;
-    color:black;
+    color: #FFFFFF;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid #434343;
+    border-bottom: 2px solid #CADE01;
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -175,7 +220,7 @@ footer{
 .footer-links ul li a{
     font-size: 18px;
     text-decoration: none;
-    color: rgb(42, 42, 42);
+    color: #d5bebe;
     display: block;
     margin-bottom: 15px;
     transition: all .3s ease;
