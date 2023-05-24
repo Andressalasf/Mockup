@@ -275,11 +275,33 @@ footer{
     }
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 530px){
  
+    
+    .mostrador{
+        width: 100%;
+        height: 1200px;
+        overflow: hidden;
 
-    .contenedor-foto a{
-        font-size: 15px;
-        text-align: center;
+       
     }
+    .mostrador .ropa .item .contenedor-foto{
+        width: 70%;
+        height: 100%;
+        flex-wrap: wrap;
+        padding-left: 30px;
+        margin: 0px;
+    }
+    .mostrador .ropa .item{
+        width: 40%;
+        height: 400px;
+        overflow: hidden;
+    }
+    .ropa{
+        padding: 0px;
+        flex-wrap: wrap;
+        w
+    }
+
+    
 }
