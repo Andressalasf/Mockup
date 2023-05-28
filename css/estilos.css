@@ -246,27 +246,110 @@ footer{
     background-color:  #434343;
 }
 
-/* ################# PIE DE PAGINA ############## */
+/* ################# MEDIA QUERYS ############## */
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 1049px) {
+    
+    
     .mostrador{
         width: 100%;
-        height: 1200px;
+        height: 360px;
 
        
     }
     .mostrador .ropa .item .contenedor-foto{
-        width: 70%;
+        width: 100%;
         flex-wrap: wrap;
         padding: 0px;
         margin: 0px;
+        height: 100%;
+    }
+
+    .mostrador .ropa .item .contenedor-foto .descripcion{
+       font-size: 13px;
+    }
+    .mostrador .ropa .item .contenedor-foto a{
+        font-size: 18px;
+       
+     }
+    .mostrador .ropa .item{
+        width: 13%;
+        height: 400px;
+        
+    }
+    .ropa{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px;
+       
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-row{
+        padding-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 920px){
+  
+    .mostrador{
+        width: 100%;
+        height: 800px;
+
+       
+    }
+    .mostrador .ropa .item .contenedor-foto{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 0px;
+        height: 90%;
+    }
+    .mostrador .ropa .item{
+        width: 25%;
+        height: 400px;
+        padding: 11px;
+    }
+    .ropa{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 18px 17px;
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-row{
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    /* .item{
+        background-color: #434343;
+    }
+    .contenedor-foto{
+        background-color: aliceblue;
+    }
+    */
+    .mostrador{
+        width: 100%;
+        height: 1300px;
+
+       
+    }
+    .mostrador .ropa .item .contenedor-foto{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 0px;
+        height: 90%;
     }
     .mostrador .ropa .item{
         height: 400px;
+        padding: 11px;
     }
     .ropa{
-        padding-top: 20px;
-        padding-left: 60px;
+        padding: 18px 17px;
         flex-wrap: wrap;
     }
 
@@ -276,6 +359,7 @@ footer{
 }
 
 @media screen and (max-width: 530px){
+
  
     
     .mostrador{
@@ -285,11 +369,15 @@ footer{
 
        
     }
+
+    .icon img{
+        width: 80px;
+    }
+   
     .mostrador .ropa .item .contenedor-foto{
-        width: 70%;
-        height: 100%;
+        width: 100%;
+        height: 80%;
         flex-wrap: wrap;
-        padding-left: 30px;
         margin: 0px;
     }
     .mostrador .ropa .item{
@@ -300,8 +388,17 @@ footer{
     .ropa{
         padding: 0px;
         flex-wrap: wrap;
-        w
+        
     }
 
+    .footer .footer-row{
+        padding-left: 33px;
+    }
+
+    .footer .footer-row .footer-links{
+        width: 80%;
+       
+        text-align: center;
+    }
     
 }
