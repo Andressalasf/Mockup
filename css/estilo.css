@@ -193,6 +193,9 @@ h2{
         font-size: 20px;
         border-radius: 10px;
     }
+    .header .li a{
+        color: #FFFFFF;
+    }
     .header .li:hover{
         background-color: #6924a5a8;
     }
