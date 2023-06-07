@@ -13,12 +13,10 @@ body{
 
 .contenedor{
     width: 100%;
-    padding: 15px;
+    text-align: center;
+    
 }
-.formulario{
-    background-color: #FFFFFF;
-    padding: 5px;
-}
+
 h1{
     text-align: center;
     color: #120727;
@@ -44,12 +42,13 @@ input[type="text"], input[type="password"]{
 }
 .button{
     border: none;
-    width: 100%;
+    width: 60%;
     font-size: 20px;
     background-color: #CADE01 ;
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
+    overflow: hidden;
 
 }
 
@@ -70,29 +69,64 @@ p{
 .link:hover{
     color: #6924A5;
 }
-.formulario{
-    width: 500px;
-    margin: auto;
-    border-radius: 2px;
-    margin-top: 60px;
-}
-.formulario img{
-    width: 20%;
-    position: relative;
-    left: 200px;
-    padding-top: 5px;
-}
-
-header{
+.contendor{
+    width: 100%;
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-    width: 100%;
-    background-color: #CADE01;
-    box-shadow: 1px solid;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 30px;
 }
+.formulario{
+    width: 380px;
+    height: 500px;
+    margin: auto;
+    border-radius: 5px;
+   
+    background-color: #FFFFFF;
+}
+.formulario .portada{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.formulario .portada img{
+    width: 100px;
+    height: 100px;
+}
+
+/* header */
+.header{
+    width: 100%;
+    background-color: #CADE01 ;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header .menu{
+    display: none;
+}
+.header >i{
+    width: 10px;
+    height: 10px;
+}
+
+.header .ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+.header .li{
+    margin: 10px;
+}
+
+
 
 h2{
     width: 40%;
@@ -100,45 +134,75 @@ h2{
 
     }
 
-    .inicio a{
-        width: 40%;
-        padding: 30px;
-        padding-right: 60px;
-        text-decoration: none;
-        color: #120727;
-        font-size: 20px;
+.ul .li a{
+    width: 20%;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #120727;
+    font-size: 20px;
 
-    }
+}
 
-    .inicio a:hover{
-        color: #6924A5;
-    }
-    .input-contenedor{
-        transition: all ease-in-out .5s;
-    }
+.inicio a:hover{
+    color: #6924A5;
+}
+.input-contenedor{
+    transition: all ease-in-out .5s;
+}
   
 
-    @media screen and (max-width: 500px) {
-        header {
-         background-color: #120727;
-         color: #FFFFFF;
-         width: 100%;
+@media screen and (max-width: 527px) {
+
+    .header .menu {
+     display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    }
         
-        }
-        .inicio a{
-            background-color: #CADE01;
-            padding: 2px;
-            font-size: 20px;
-        }
+    header .inicio{
+        width: 100%;
+         height: 0;
+        overflow: hidden;
+        display: flex;
+        transition: all .5s ease;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+            
+
+            
+    }
+   
+    .header .inicio.open{
+        display: block;
+        height: 200px;
+    }
+    .header .ul{
+            width: 90%;
+            flex-direction: column;
+            text-align: center;
+            
+    }
+    
+    .header .li{
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        background-color: #120727;
+        color: #FFFFFF;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .header .li:hover{
+        background-color: #6924a5a8;
+    }
+    .header h2{
+        text-align: center;
+        padding-left: 10px;
+    }
 
        
         
-    }
+}
 
-    @media screen and (max-width: 759px) {
-        .inicio a{
-           margin-left: 5px;
-            padding: 5px;
-        }
-
-    }
+   
